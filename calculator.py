@@ -48,4 +48,3 @@ def parse_input():
 		# Function call to calculator() with parameters
 		calculator(num1, num2, op)
 		break
-parse_input()
