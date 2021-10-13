@@ -15,17 +15,21 @@ def calculator(number1, number2, operator):
 		calculator returns a result using an if else.
 	"""
 	if operator == "+":
-		print(number1 + number2)
+		return number1 + number2
 	elif operator == "-":
-		print(number1 - number2)
+		return number1 - number2
 	elif operator == "*":
-		print(number1 * number2)
+		return number1 * number2
 	elif operator == "/":
-		return 0 if number2 == 0 else print(number1 / number2)
+		if number2 == 0:
+			return False
+		return number1 / number2
 	elif operator == "//":
-		print(number1 // number2)
+		if number2 == 0:
+			return False
+		return number1 // number2
 	elif operator == "**":
-		print(number1 ** number2)
+		return number1 ** number2
 	else:
 		return False
 def parse_input():
