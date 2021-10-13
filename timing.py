@@ -11,11 +11,11 @@ def calculate_time(func):
 		-------------------------------------------
 		Returns:
 		--------
-		wrapper = 
+		wrapper = decorator function
 		"""
 		start = time.time()
 		func()
 		finish = time.time()
-		X = finish - start
-		print(f'Total time {X}')
+		totalTime = finish - start
+		print(f'Total time {totalTime}')
 	return wrapper
