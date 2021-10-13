@@ -1,4 +1,4 @@
-def calculator(number1, operator, number2):
+def calculator(number1, number2, operator):
 	"""
 	This function performs as a calculator that takes user input and
 	performs mathematical operations, ie. add, sub, mult, div, floor div, and power.
@@ -46,5 +46,6 @@ def parse_input():
 		if not (op=="+" or op=="-" or op=="*" or op=="/" or op=="//" or op=="**"):
 			break
 		# Function call to calculator() with parameters
-		calculator(num1, op, num2)
+		calculator(num1, num2, op)
 		break
+parse_input()
