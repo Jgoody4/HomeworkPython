@@ -11,6 +11,7 @@ def tripler(func):
 	return add_one
 @tripler
 def add():
-	func(1)
-	func(2)
-	func(3)
+
+	add(1)
+	add(2)
+	add(3)
