@@ -8,7 +8,7 @@ def tripler(func):
 		"""
 		print("Inside wrapper function")
 		func()
-	print("Outside wrapper function")
+	print(f'Outside wrapper function')
 	return wrapper
 
 @tripler
