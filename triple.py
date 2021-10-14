@@ -3,8 +3,8 @@ def tripler(func):
 		func(*args, **kwargs)
 		func(*args, **kwargs)
 		func(*args, **kwargs)
-	return wrapper()
+	return wrapper
 @tripler
 def say_whee():
-	print("whee")
+	print('Whee')
 
