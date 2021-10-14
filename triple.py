@@ -1,22 +1,20 @@
+
 def tripler(func):
 	"""
-
+	This function
 	"""
-	def wrapper():
+	def add_one(a):
 		"""
 
 		"""
-		print("Inside wrapper function")
-		func()
-	print(f'Outside wrapper function')
-	return wrapper
-
+		return func(a+1)
+	return add_one
+	square = add_one(square)
+	square(5)
 @tripler
-def display():
+def square(num):
 	"""
 
 	"""
-	print("Inside display")
-display()
-display()
-display()
+	return num ** 2
+	square(7)
